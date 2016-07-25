@@ -1,0 +1,236 @@
+*{
+	padding:0;
+	margin:0;
+	/*font-family: "微软雅黑";*/
+}
+li{
+	list-style:none;
+}
+.icon{
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.todolist-box{
+	width:800px;
+	margin:0 auto;
+	border:1px solid #272822;
+	/*background-color:#272822;*/
+	margin-top:20px;
+	overflow: hidden;
+}
+@media screen and (max-width:800px){
+	.todolist-box{
+	width:600px;
+	margin:0 auto;
+	border:1px solid #272822;
+	/*background-color:#272822;*/
+	margin-top:20px;
+	overflow: hidden;
+	}
+}
+.todolist-box header>h3{
+	width:100%;
+	height:60px;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: 0.4em;
+	color: #272822;
+	line-height:80px;
+}
+.add{
+	width:30px;
+	height:30px;
+	color: #272822;
+	cursor: pointer;
+	border:1px solid #ccc;
+	position: absolute;
+	top:20px;
+	right:50px;
+	font-size: 40px;
+	line-height: 30px;
+	text-align: center;
+	font-weight:1200px;
+}
+.shq{
+	width:30px;
+	height:30px;
+	color: #272822;
+	cursor: pointer;
+	border:1px solid #ccc;
+	position: absolute;
+	top:20px;
+	left:50px;
+	font-size:22px;
+	line-height: 30px;
+	text-align: center;
+	/*font-weight:1200px;*/
+}
+.todolist-box header{
+	width:100%;
+	height:145px;
+	/*background-color:#272822;*/
+	position: relative;
+}
+.todolist-box header form{
+	width:535px;
+	height:100%;
+	margin:0 auto;
+	/*display: none;*/
+}
+.todolist-box .myform input:nth-of-type(1){
+	background-color:#fff;
+	border:1px solid #C9C9C9;
+	width:70%;
+	font-size:120%;
+	border-radius:5px;
+	padding:7px;
+	position: absolute;
+	top:100px;
+	left:60px;
+	outline: none;
+}
+.todolist-box .myform input:nth-of-type(1):focus{
+		background-color:#FFFFFF;
+		border:1px solid #ddd;
+	}
+.todolist-box .myform input:nth-of-type(2){
+	width: 80px;
+	/*background-color:#B26CFF;*/
+	background-color:#B26CFF;
+	opacity: 0.5;
+	/*border:1px solid #B26CFF;*/
+	border:none;
+	border-radius:5px;
+	padding:8px;
+	font-size:120%;
+	color:#fff;
+	text-transform:uppercase;
+	position: absolute;
+	right:60px;
+	top:100px;
+	outline: none;
+}
+.todolist-box .myform input:nth-of-type(2):hover{
+	background: #B26CFF;
+	opacity: 0.8;
+}
+section{
+	overflow: hidden;
+	padding-right: 5%;
+	padding-left: 5%;
+	box-sizing:border-box;
+}
+.now{
+	width: 50%;
+	height:auto !important;
+	height:300px;
+	/*background:#8B6CFF;*/
+	/*background:rgba(178,108,255,0.7);*/
+	margin-top: 50px;
+	padding-top: 30px;
+	margin-bottom: 50px;
+	border:1px solid #ddd;
+	float: left;
+	box-sizing:border-box;
+}
+.before{
+	width: 50%;
+	height:auto !important;
+	height:300px;
+	margin-top: 50px;
+	padding-top: 30px;
+	margin-bottom: 50px;
+	/*background:rgba(178,108,255,0.8);*/
+	border:1px solid #ddd;
+	float: right;
+	box-sizing:border-box;
+	border-left:none;
+}
+.now .list-title,.before .list-title{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.now .list-title>h3,.before .list-title>h3{
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+	color:#272727;
+}
+.now .list-title>.list-num,.before .list-title>.list-num{
+	width:20px;
+	height: 20px;
+	border-radius: 35%;
+	background: #fff;
+	position: absolute;
+	top:5px;
+	right:90px;
+	text-align: center;
+	line-height: 20px;
+	color: #FF0831;
+	border:1px solid #ddd;
+}
+.now .list-item,.before .list-item{
+	width: 100%;
+	min-height: 300px;
+}
+.now .list-item>li,.before .list-item>li{
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	background: #fff;
+	margin-top:10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.now .list-item .item-btn,.before .list-item .item-btn{
+	position: absolute;
+	left:0;
+	top:8px;
+}
+.now .list-item .list-content,.before .list-item .list-content{
+	width: 70%;
+	height: 100%;
+	line-height: 30px;
+	border:none;
+	position: absolute;
+	left:40px;
+}
+.now .list-item .icon-login,.before .list-item .icon-login{
+	background: transparent;
+	border:none;
+	position: absolute;
+	right:0;
+	top:5px;
+	color: #ccc;
+	transition:all .5s;
+	outline: none;
+}
+.now .list-item .icon-login:hover{
+	color: #81C100;
+	transform:scale(1.5,1.5);
+	-webkit-transform:scale(1.5,1.5);
+}
+.before .list-item .icon-login:hover{
+	color: #FF2148;
+	transform:scale(1.5,1.5);
+	-webkit-transform:scale(1.5,1.5);
+}
+.now .list-item .list-data,.before .list-item .list-data{
+
+	position: absolute;
+	font-size:8px;
+	right: 25px;
+}
+.now .list-item i,.before .list-item i{
+	color: #FF6C0A;
+	position: absolute;
+	left:20px;
+	z-index: 10;
+}
